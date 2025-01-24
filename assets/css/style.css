@@ -193,8 +193,8 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--orange-yellow-crayola);
-  /* color: var(--white-1); */
+  /* color: var(--orange-yellow-crayola); */
+  color: var(--white-1);
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -318,7 +318,7 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 145px;
+  max-height: 150px;
   overflow: hidden;
   transition: var(--transition-2);
 }
@@ -515,62 +515,47 @@ main {
  * #service 
  */
 
-.service {
-  margin-bottom: 25px;
-  width: 100%;
-}
+.service { margin-bottom: 35px; }
 
-.service-title { margin-bottom: 15px; }
+.service-title { margin-bottom: 20px; }
 
 .service-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 12px;
+  gap: 20px;
 }
 
 .service-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 12px;
-  border-radius: 14px;
+  position: relative;
   background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
 }
 
-.service-icon-box {
-  min-width: 32px;
+.service-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
 }
 
-.service-icon-box ion-icon {
-  color: var(--white-1);
-}
+.service-icon-box { margin-bottom: 10px; }
 
-.service-content-box {
-  width: 100%;
-}
+.service-icon-box img { margin: auto; }
 
-.service-item-title { margin-bottom: 4px; }
+.service-content-box { text-align: center; }
+
+.service-item-title { margin-bottom: 7px; }
 
 .service-item-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.4;
-  white-space: pre-line;
-}
-
-/* Update icon colors for dark/light mode */
-body:not(.light-mode) .service-icon-box ion-icon {
-  color: var(--white-1);
-}
-
-body.light-mode .service-icon-box ion-icon {
-  color: var(--onyx);
-}
-
-/* Hover effect for icons */
-.service-icon-box:hover ion-icon {
-  color: var(--orange-yellow-crayola);
+  font-weight: var(--fw-3);
+  line-height: 1.6;
 }
 
 
@@ -1744,8 +1729,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* service */
 
   .service-list {
-    grid-template-columns: 1fr;
-    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
   }
 
   /* testimonials */
