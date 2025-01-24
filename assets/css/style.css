@@ -48,10 +48,10 @@
     hsl(0, 0%, 25%) 0%, 
     hsla(0, 0%, 25%, 0) 50%
   );
-  --text-gradient-blue: linear-gradient(
+  --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(210, 100%, 60%), 
-    hsl(240, 100%, 60%)
+    hsl(45, 100%, 72%), 
+    hsl(35, 100%, 68%)
   );
 
   /* solid */
@@ -68,11 +68,6 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
-
-  /* blue colors */
-  --blue-1: hsl(210, 100%, 50%);
-  --blue-2: hsl(240, 100%, 50%);
-  --blue-hover: hsl(240, 100%, 45%);
 
   /**
    * typography
@@ -114,10 +109,6 @@
   --transition-duration: 0.25s;
   --transition-1: var(--transition-duration) ease;
   --transition-2: var(--transition-duration) ease;
-
-  /* link colors */
-  --link-color: hsl(200, 100%, 70%);
-  --link-hover-color: hsl(200, 100%, 60%);
 
 }
 
@@ -262,7 +253,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-blue);
+  background: var(--text-gradient-yellow);
   border-radius: 3px;
 }
 
@@ -844,7 +835,7 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--text-gradient-blue);
+  background: var(--text-gradient-yellow);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
 }
@@ -888,7 +879,7 @@ main {
 }
 
 .skill-progress-fill {
-  background: var(--text-gradient-blue);
+  background: var(--text-gradient-yellow);
   height: 100%;
   border-radius: inherit;
 }
@@ -1956,32 +1947,6 @@ body.light-mode {
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.1);
   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.05);
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.1);
-
-  /* Add hyperlink colors */
-  --link-color: hsl(45, 100%, 45%);
-  --link-hover-color: hsl(45, 100%, 35%);
-
-  a {
-    color: var(--link-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  a:hover {
-    color: var(--link-hover-color);
-    text-decoration: underline;
-  }
-
-  /* Specific link styles in about section */
-  .about-text a {
-    color: var(--blue-1);
-    font-weight: 500;
-  }
-
-  .about-text a:hover {
-    color: var(--blue-hover);
-    text-decoration: underline;
-  }
 }
 
 /* Additional light mode adjustments for specific elements */
