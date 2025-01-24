@@ -68,7 +68,7 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
-  
+
   /**
    * typography
    */
@@ -1886,29 +1886,46 @@ body.light-mode {
   /* Reverse all color variables for light mode */
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 75%) 3%, 
-    hsl(0, 0%, 81%) 97%
+    hsl(240, 1%, 95%) 3%, 
+    hsl(0, 0%, 90%) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 82%, 0.251) 0%, 
+    hsla(240, 1%, 92%, 0.251) 0%, 
     hsla(240, 2%, 89%, 0) 100%
-  ), hsl(240, 2%, 87%);
-  
+  ), hsl(240, 2%, 95%);
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right, 
+    hsl(45, 100%, 71%) 0%, 
+    hsla(36, 100%, 69%, 0) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+    135deg, 
+    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsla(35, 100%, 68%, 0) 59.86%
+  ), hsl(240, 2%, 95%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(0, 0%, 85%) 0%, 
+    hsla(0, 0%, 85%, 0) 50%
+  );
+
   /* Reverse solid colors */
-  --jet: hsl(0, 0%, 78%);
-  --onyx: hsl(240, 1%, 83%);
-  --eerie-black-1: hsl(240, 2%, 87%);
-  --eerie-black-2: hsl(240, 2%, 88%);
-  --smoky-black: hsl(0, 0%, 93%);
+  --jet: hsl(0, 0%, 80%);
+  --onyx: hsl(240, 1%, 90%);
+  --eerie-black-1: hsl(240, 2%, 95%);
+  --eerie-black-2: hsl(240, 2%, 93%);
+  --smoky-black: hsl(0, 0%, 100%);
   --white-1: hsl(0, 0%, 0%);
-  --white-2: hsl(0, 0%, 2%);
-  --light-gray: hsl(0, 0%, 16%);
-  --light-gray-70: hsla(0, 0%, 16%, 0.7);
-  
-  /* Update background and text colors */
-  background: var(--smoky-black);
-  color: var(--white-1);
+  --white-2: hsl(0, 0%, 13%);
+  --orange-yellow-crayola: hsl(45, 100%, 45%);
+  --vegas-gold: hsl(45, 54%, 48%);
+  --light-gray: hsl(0, 0%, 20%);
+  --light-gray-70: hsla(0, 0%, 20%, 0.7);
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+  /* Update background colors */
+  background-color: var(--smoky-black);
 
   /* Adjust shadows for light mode */
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.1);
@@ -1948,10 +1965,29 @@ body.light-mode {
   .testimonials-text,
   .modal-title,
   .form-input,
-  .form-input::placeholder {
+  .form-input::placeholder,
+  .filter-list,
+  .select-value,
+  .project-category,
+  [data-select-item],
+  .blog-meta {
     color: var(--white-1);
   }
 
+  /* Backgrounds and borders */
+  .sidebar,
+  article,
+  .content-card,
+  .navbar,
+  .blog-banner-box,
+  .filter-select-box,
+  .select-list,
+  .form-input,
+  .modal-content,
+  .testimonials-modal {
+    background: var(--eerie-black-2);
+    border-color: var(--jet);
+  }
 
   /* Icons and buttons */
   .icon-box,
@@ -1960,26 +1996,14 @@ body.light-mode {
   .project-item-icon-box,
   .modal-close-btn,
   ion-icon,
-  .form-btn {
+  .form-btn,
+  [data-filter-btn] {
     color: var(--white-1);
-  }
-
-  /* Backgrounds and borders */
-  .sidebar,
-  article,
-  .content-card,
-  .navbar {
-    background: var(--eerie-black-2);
-    border-color: var(--jet);
   }
 
   /* Progress bars and separators */
   .separator {
     background: var(--jet);
-  }
-
-  .skill-progress-fill {
-    background: var(--orange-yellow-crayola);
   }
 
   .skill-progress-bg {
@@ -2000,33 +2024,11 @@ body.light-mode {
     color: var(--orange-yellow-crayola);
   }
 
-  /* Social icons */
-  .social-item .social-link {
-    color: var(--white-1);
-  }
-
-  .social-item .social-link:hover {
+  /* Hover effects */
+  .social-link:hover,
+  .project-item-icon-box:hover,
+  .form-btn:hover {
     color: var(--orange-yellow-crayola);
-  }
-
-  /* Form elements */
-  .form-input {
-    border-color: var(--jet);
-    color: var(--white-1);
-  }
-
-  .form-input::placeholder {
-    color: var(--white-2);
-  }
-
-  /* Modal */
-  .testimonials-modal {
-    background: var(--eerie-black-2);
-  }
-
-  .modal-content time,
-  .modal-content p {
-    color: var(--white-1);
   }
 }
 
