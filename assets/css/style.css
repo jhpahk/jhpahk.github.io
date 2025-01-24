@@ -68,6 +68,7 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --blue: hsl(240, 100%, 50%);
 
   /**
    * typography
@@ -159,6 +160,10 @@ html { font-family: var(--ff-poppins); }
 body { background: var(--smoky-black); }
 
 
+
+a:link {
+  color : var(--blue);
+}
 
 
 
@@ -1937,6 +1942,7 @@ body.light-mode {
   --light-gray: hsl(0, 0%, 20%);
   --light-gray-70: hsla(0, 0%, 20%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --blue: hsl(190, 100%, 77%);
 
   /* Update background colors */
   background-color: var(--smoky-black);
