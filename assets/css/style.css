@@ -2034,7 +2034,40 @@ body.light-mode {
 
 /* Add global transition for theme changes */
 * {
-  transition: background-color 0.25s, color 0.25s, border-color 0.25s, box-shadow 0.25s;
+  transition: all 0.25s ease;
+}
+
+/* Remove individual transitions */
+.sidebar,
+.content-card,
+.article,
+.navbar,
+.blog-banner-box,
+.filter-select-box,
+.select-list,
+.form-input,
+.modal-content,
+.testimonials-modal,
+.icon-box,
+.info_more-btn,
+.contact-info .icon-box,
+.project-item-icon-box,
+.modal-close-btn,
+ion-icon,
+.form-btn,
+[data-filter-btn],
+.separator,
+.skill-progress-bg,
+.navbar-link,
+.social-link,
+#theme-toggle .sun,
+#theme-toggle .moon {
+  transition: inherit;
+}
+
+/* Remove any other individual transition properties */
+body.light-mode {
+  transition: inherit;
 }
 
 /* Theme toggle button styles */
@@ -2046,7 +2079,7 @@ body.light-mode {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: 4px;
   border-radius: 8px;
   margin-inline: 8px;
   transition: var(--transition-1);
