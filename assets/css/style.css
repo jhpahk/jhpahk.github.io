@@ -520,25 +520,17 @@ main {
 .service-title { margin-bottom: 20px; }
 
 .service-list {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
 .service-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.service-item::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background: var(--bg-gradient-jet);
-  border-radius: inherit;
-  z-index: -1;
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  width: 100%;
 }
 
 .service-icon-box {
@@ -552,7 +544,7 @@ main {
 .service-icon-box img { margin: auto; }
 
 .service-content-box {
-  flex: 1;
+  width: 100%;
 }
 
 .service-item-title { margin-bottom: 7px; }
@@ -565,23 +557,28 @@ main {
   white-space: pre-line;
 }
 
-/* Add icon color transition */
-.service-icon-box ion-icon {
+/* Update icon colors for dark/light mode */
+.service-icon-box ion-icon,
+.icon-box ion-icon {
   font-size: 24px;
-  color: var(--light-gray);
-  transition: color 0.3s ease;
 }
 
-/* Light mode icon colors */
+/* Dark mode icons */
+body:not(.light-mode) .service-icon-box ion-icon,
+body:not(.light-mode) .icon-box ion-icon {
+  color: var(--white-1);
+}
+
+/* Light mode icons */
 body.light-mode .service-icon-box ion-icon,
-body.light-mode .contact-info .icon-box ion-icon {
-  color: var(--white-1);
+body.light-mode .icon-box ion-icon {
+  color: var(--onyx);
 }
 
-/* Dark mode icon colors */
-body:not(.light-mode) .contact-info .icon-box ion-icon,
-body:not(.light-mode) .service-icon-box ion-icon {
-  color: var(--white-1);
+/* Hover effect for icons */
+.service-icon-box:hover ion-icon,
+.icon-box:hover ion-icon {
+  color: var(--orange-yellow-crayola);
 }
 
 
