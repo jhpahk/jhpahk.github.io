@@ -2149,3 +2149,8 @@ body.light-mode #theme-toggle:hover {
 .social-item:last-child {
   margin-right: 0;
 }
+
+/* Add filter to invert SVG icons in dark mode */
+body:not(.light-mode) .contact-info .icon-box img {
+  filter: invert(1);  /* This will make black SVGs white */
+}
