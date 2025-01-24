@@ -107,7 +107,7 @@
    */
 
   --transition-1: 0.25s ease;
-  --transition-2: 0.5s ease-in-out;
+  --transition-2: 0.25s ease;
 
 }
 
@@ -2037,7 +2037,7 @@ body.light-mode {
   transition: all 0.25s ease;
 }
 
-/* Remove individual transitions */
+/* Remove all individual transition properties */
 .sidebar,
 .content-card,
 .article,
@@ -2061,24 +2061,25 @@ ion-icon,
 .navbar-link,
 .social-link,
 #theme-toggle .sun,
-#theme-toggle .moon {
-  transition: inherit;
-}
-
-/* Add specific transition for gradient backgrounds */
+#theme-toggle .moon,
+.project-img::before,
+.project-img img,
+.select-list,
+.testimonials-modal,
+body.light-mode,
 .sidebar {
-  background-image: var(--bg-gradient-onyx);
-  transition: background-image 0s; /* Remove transition for gradient */
+  transition: all 0.25s ease !important;
 }
 
-body.light-mode .sidebar {
-  background-image: var(--bg-gradient-onyx);
-  transition: background-image 0s; /* Remove transition for gradient */
+/* Remove any specific transition properties */
+:root {
+  --transition-1: 0.25s ease;
+  --transition-2: 0.25s ease;
 }
 
-/* Remove any other individual transition properties */
-body.light-mode {
-  transition: inherit;
+/* Add global transition */
+* {
+  transition: all 0.25s ease;
 }
 
 /* Theme toggle button styles */
