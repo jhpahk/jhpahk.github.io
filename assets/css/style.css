@@ -2065,6 +2065,17 @@ ion-icon,
   transition: inherit;
 }
 
+/* Add specific transition for gradient backgrounds */
+.sidebar {
+  background-image: var(--bg-gradient-onyx);
+  transition: background-image 0s; /* Remove transition for gradient */
+}
+
+body.light-mode .sidebar {
+  background-image: var(--bg-gradient-onyx);
+  transition: background-image 0s; /* Remove transition for gradient */
+}
+
 /* Remove any other individual transition properties */
 body.light-mode {
   transition: inherit;
