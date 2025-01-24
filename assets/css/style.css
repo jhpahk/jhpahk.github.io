@@ -116,8 +116,8 @@
   --transition-2: var(--transition-duration) ease;
 
   /* link colors */
-  --link-color: var(--orange-yellow-crayola);
-  --link-hover-color: hsl(45, 100%, 60%);
+  --link-color: hsl(200, 100%, 70%);
+  --link-hover-color: hsl(200, 100%, 60%);
 
 }
 
