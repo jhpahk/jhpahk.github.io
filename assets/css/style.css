@@ -2082,7 +2082,7 @@ body.light-mode,
   transition: all 0.5s ease;
 }
 
-/* Theme toggle button styles */
+/* Update theme toggle button styles */
 #theme-toggle {
   color: var(--light-gray-70);
   font-size: 18px;
@@ -2091,10 +2091,9 @@ body.light-mode,
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px;
+  padding: 8px;  /* Match social-link padding */
   border-radius: 8px;
-  margin-inline: 8px;
-  transition: var(--transition-1);
+  margin-inline: 0;  /* Remove margin and let parent li handle spacing */
 }
 
 #theme-toggle .sun,
@@ -2127,4 +2126,18 @@ body.light-mode #theme-toggle {
 
 body.light-mode #theme-toggle:hover {
   color: var(--orange-yellow-crayola);
+}
+
+/* Update social list item spacing */
+.social-item {
+  margin-inline: 8px;  /* Apply consistent spacing to all items */
+}
+
+/* First and last items should not have outer margins */
+.social-item:first-child {
+  margin-left: 0;
+}
+
+.social-item:last-child {
+  margin-right: 0;
 }
