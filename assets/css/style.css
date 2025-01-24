@@ -793,8 +793,6 @@ main {
 .timeline-list {
   font-size: var(--fs-6);
   margin-left: 45px;
-  max-height: calc(3 * (1.6em + 20px + 7px + 2em));  /* Limit to 3 items */
-  overflow: hidden;
 }
 
 .timeline-item { position: relative; }
@@ -2194,8 +2192,3 @@ body.light-mode #theme-toggle:hover {
 .service .title-wrapper .service-title {
   margin-bottom: 0;
 }
-
-/* Adjust icon colors for light mode */
-/* body.light-mode .icon-box ion-icon {
-  color: var(--onyx);
-} */
