@@ -538,24 +538,19 @@ main {
   border-radius: 14px;
 }
 
-.service-icon-box {
+.service-item .service-icon-box {
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  background: var(--border-gradient-onyx);
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2px;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
 }
 
-.service-icon-box ion-icon {
-  font-size: 14px;
+.service-item .service-icon-box ion-icon {
+  font-size: 12px;
   --ionicon-stroke-width: 35px;
 }
 
-.service-icon-box::before {
+.service-item .service-icon-box::before {
   content: "";
   position: absolute;
   inset: 1px;
