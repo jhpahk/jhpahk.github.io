@@ -2059,7 +2059,7 @@ body.light-mode {
 
 /* Add global transition for theme changes */
 * {
-  transition: all 0.25s ease;
+  transition: all 0.25s ease !important;
 }
 
 /* Remove all individual transition properties
