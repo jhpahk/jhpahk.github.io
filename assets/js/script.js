@@ -157,3 +157,25 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+// theme (light/dark) toggle button
+const toggleButton = document.getElementById("theme-toggle");
+const body = document.body;
+
+// Check initial state (from localStorage)
+if (localStorage.getItem("theme") === "light") {
+  body.classList.add("light-mode");
+}
+
+// Toggle theme on button click
+toggleButton.addEventListener("click", () => {
+  body.classList.toggle("light-mode");
+  
+  // Save state
+  if (body.classList.contains("light-mode")) {
+    localStorage.setItem("theme", "light");
+  } else {
+    localStorage.setItem("theme", "dark");
+  }
+});
