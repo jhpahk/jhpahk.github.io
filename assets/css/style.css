@@ -525,7 +525,7 @@ a {
 
 .contact-link a {
   white-space: nowrap;
-  display: inline-block;
+  display: inline-block !important;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
