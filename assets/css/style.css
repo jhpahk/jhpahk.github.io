@@ -54,7 +54,8 @@
     hsl(35, 100%, 68%)
   );
 
-  /* solid colors for dark theme (default) */
+  /* solid */
+
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
@@ -67,15 +68,6 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
-
-  /* solid colors for light theme */
-  --light-jet: hsl(0, 0%, 78%);
-  --light-onyx: hsl(240, 1%, 83%);
-  --light-eerie-black-1: hsl(240, 2%, 87%);
-  --light-eerie-black-2: hsl(240, 2%, 88%);
-  --light-smoky-black: hsl(0, 0%, 93%);
-  --dark-1: hsl(0, 0%, 0%);
-  --dark-2: hsl(0, 0%, 2%);
 
   /**
    * typography
@@ -1887,53 +1879,4 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
-}
-
-/* Light mode styles */
-body.light-mode {
-  --jet: var(--light-jet);
-  --onyx: var(--light-onyx);
-  --eerie-black-1: var(--light-eerie-black-1);
-  --eerie-black-2: var(--light-eerie-black-2);
-  --smoky-black: var(--light-smoky-black);
-  --white-1: var(--dark-1);
-  --white-2: var(--dark-2);
-  
-  --bg-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(240, 1%, 75%) 3%, 
-    hsl(0, 0%, 81%) 97%
-  );
-  
-  --bg-gradient-jet: linear-gradient(
-    to bottom right, 
-    hsla(240, 1%, 82%, 0.251) 0%, 
-    hsla(240, 2%, 89%, 0) 100%
-  ), hsl(240, 2%, 87%);
-  
-  background: var(--light-smoky-black);
-}
-
-/* Theme toggle button styles */
-.theme-toggle {
-  background: var(--onyx);
-  color: var(--orange-yellow-crayola);
-  padding: 8px 15px;
-  border-radius: 8px;
-  font-size: var(--fs-6);
-  font-weight: var(--fw-400);
-  margin-top: 15px;
-  transition: var(--transition-1);
-}
-
-.theme-toggle:hover {
-  background: var(--jet);
-}
-
-.light-mode .theme-toggle {
-  background: var(--light-onyx);
-}
-
-.light-mode .theme-toggle:hover {
-  background: var(--light-jet);
 }
