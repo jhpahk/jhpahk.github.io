@@ -519,6 +519,8 @@ main {
 a {
   white-space: nowrap;
   display: inline !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .about-text p { margin-bottom: 15px; }
