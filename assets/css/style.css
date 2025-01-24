@@ -2068,18 +2068,18 @@ ion-icon,
 .testimonials-modal,
 body.light-mode,
 .sidebar {
-  transition: all 0.25s ease !important;
+  transition: all 0.5s ease !important;
 }
 
 /* Remove any specific transition properties */
 :root {
-  --transition-1: 0.25s ease;
-  --transition-2: 0.25s ease;
+  --transition-1: 0.5s ease;
+  --transition-2: 0.5s ease;
 }
 
 /* Add global transition */
 * {
-  transition: all 0.25s ease;
+  transition: all 0.5s ease;
 }
 
 /* Theme toggle button styles */
