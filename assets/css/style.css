@@ -62,7 +62,7 @@
   --eerie-black-2: hsl(240, 2%, 12%);
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 77%);
+  --white-2: hsl(0, 0%, 90%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
@@ -510,7 +510,7 @@ main {
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
-  color: var(--light-gray);
+  color: var(--white-2);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -579,7 +579,7 @@ a {
   margin-top: 2px;
   font-size: var(--fs-7);
   line-height: 2;
-  color: var(--white-1);
+  color: var(--light-gray);
 }
 
 
@@ -851,7 +851,7 @@ a {
 }
 
 .timeline-text {
-  color: var(--light-gray);
+  color: var(--white-2);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
