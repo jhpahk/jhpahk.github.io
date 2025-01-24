@@ -235,7 +235,7 @@ article.active {
 .h3,
 .h4,
 .h5 {
-  color: var(--white-2);
+  color: var(--white-1);
   text-transform: capitalize;
 }
 
@@ -348,7 +348,7 @@ main {
 }
 
 .info-content .name {
-  color: var(--white-2);
+  color: var(--white-1);
   font-size: var(--fs-3);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
@@ -435,7 +435,7 @@ main {
 }
 
 .contact-info :is(.contact-link, time, address) {
-  color: var(--white-2);
+  color: var(--white-1);
   font-size: var(--fs-7);
 }
 
@@ -712,7 +712,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white-2);
+  color: var(--white-1);
   font-size: 18px;
   opacity: 0.7;
 }
@@ -1040,7 +1040,7 @@ a {
 .project-category { margin-left: 10px; }
 
 .project-title {
-  color: var(--white-2);
+  color: var(--white-1);
   font-size: var(--fs-5);
   font-weight: var(--fw-400);
   text-transform: capitalize;
@@ -1180,7 +1180,7 @@ a {
 }
 
 .form-input {
-  color: var(--white-2);
+  color: var(--white-1);
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
   padding: 13px 20px;
@@ -2037,7 +2037,7 @@ body.light-mode {
 
   /* Navigation */
   .navbar-link {
-    color: var(--white-2);
+    color: var(--white-1);
   }
 
   .navbar-link:hover,
