@@ -1404,12 +1404,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* service */
 
   .service-item {
-    padding: 15px;
+    padding: 5px;
   }
 
   .service-icon-box {
     margin-bottom: 0;
-    margin-top: 5px;
+    margin-top: 8px;
   }
 
   .service-content-box { text-align: left; }
