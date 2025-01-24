@@ -2181,7 +2181,7 @@ body.light-mode #theme-toggle:hover {
 
 .service-item-text {
   font-size: var(--fs-7);
-  line-height: 1.6;
+  line-height: 2;
 }
 
 /* Override any responsive styles */
