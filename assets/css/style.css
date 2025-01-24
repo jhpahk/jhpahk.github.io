@@ -1877,7 +1877,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contacts-list { grid-template-columns: 1fr; }
 
-  .contact-info .contact-link {
+  .contact-link {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
