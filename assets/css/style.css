@@ -507,6 +507,11 @@ main {
   line-height: 1.6;
 }
 
+.about-text a {
+  white-space: nowrap !important;
+  display: inline !important;
+}
+
 .about-text p { margin-bottom: 15px; }
 
 
