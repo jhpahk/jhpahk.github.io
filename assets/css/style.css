@@ -566,14 +566,20 @@ main {
 }
 
 .service-item-title {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-size: var(--fs-6);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .service-item-text {
   font-size: var(--fs-7);
-  line-height: 1.6;
+  line-height: 2;
+}
+
+.service-item-text br {
+  content: "";
+  display: block;
+  margin: 8px 0;
 }
 
 
@@ -2184,14 +2190,20 @@ body.light-mode #theme-toggle:hover {
 }
 
 .service-item-title {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-size: var(--fs-6);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .service-item-text {
   font-size: var(--fs-7);
   line-height: 2;
+}
+
+.service-item-text br {
+  content: "";
+  display: block;
+  margin: 8px 0;
 }
 
 /* Override any responsive styles */
