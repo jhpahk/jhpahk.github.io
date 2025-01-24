@@ -523,7 +523,7 @@ a {
   text-overflow: ellipsis;
 }
 
-.contact-link a {
+.contact-item a {
   white-space: nowrap;
   display: inline-block !important;
   overflow: hidden;
