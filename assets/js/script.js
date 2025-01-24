@@ -34,9 +34,10 @@ for (let i = 0; i < navigationLinks.length; i++) {
 const toggleButton = document.getElementById("theme-toggle");
 const body = document.body;
 
-// Check initial theme state
-if (localStorage.getItem("theme") === "light") {
+// Check initial theme state (기본값을 light로 변경)
+if (localStorage.getItem("theme") !== "dark") {
   body.classList.add("light-mode");
+  localStorage.setItem("theme", "light"); // 최초 접속 시 light-mode로 설정
 }
 
 // Toggle theme on button click

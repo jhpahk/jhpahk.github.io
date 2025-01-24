@@ -48,10 +48,10 @@
     hsl(0, 0%, 25%) 0%, 
     hsla(0, 0%, 25%, 0) 50%
   );
-  --text-gradient-yellow: linear-gradient(
+  --text-gradient-blue: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    hsl(210, 100%, 60%), 
+    hsl(240, 100%, 60%)
   );
 
   /* solid */
@@ -68,6 +68,11 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+  /* blue colors */
+  --blue-1: hsl(210, 100%, 50%);
+  --blue-2: hsl(240, 100%, 50%);
+  --blue-hover: hsl(240, 100%, 45%);
 
   /**
    * typography
@@ -109,6 +114,10 @@
   --transition-duration: 0.25s;
   --transition-1: var(--transition-duration) ease;
   --transition-2: var(--transition-duration) ease;
+
+  /* link colors */
+  --link-color: var(--orange-yellow-crayola);
+  --link-hover-color: hsl(45, 100%, 60%);
 
 }
 
@@ -253,7 +262,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-blue);
   border-radius: 3px;
 }
 
@@ -835,7 +844,7 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-blue);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
 }
@@ -879,7 +888,7 @@ main {
 }
 
 .skill-progress-fill {
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-blue);
   height: 100%;
   border-radius: inherit;
 }
@@ -1949,8 +1958,8 @@ body.light-mode {
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.1);
 
   /* Add hyperlink colors */
-  --link-color: var(--orange-yellow-crayola);
-  --link-hover-color: hsl(45, 100%, 35%);
+  --link-color: var(--blue-1);
+  --link-hover-color: var(--blue-hover);
 
   a {
     color: var(--link-color);
@@ -1965,12 +1974,12 @@ body.light-mode {
 
   /* Specific link styles in about section */
   .about-text a {
-    color: var(--link-color);
+    color: var(--blue-1);
     font-weight: 500;
   }
 
   .about-text a:hover {
-    color: var(--link-hover-color);
+    color: var(--blue-hover);
     text-decoration: underline;
   }
 }
