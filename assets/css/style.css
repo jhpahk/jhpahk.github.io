@@ -2149,24 +2149,3 @@ body.light-mode #theme-toggle:hover {
 .social-item:last-child {
   margin-right: 0;
 }
-
-/* Add mobile-specific styles */
-@media (max-width: 580px) {
-  .info-content .title::after {
-    content: "PhD Student\n@ POSTECH";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--onyx);
-    border-radius: 8px;
-    padding: 3px 12px;
-    white-space: pre-line; /* Allow line breaks */
-  }
-
-  .info-content .title {
-    position: relative;
-    color: transparent;
-  }
-}
