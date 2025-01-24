@@ -106,8 +106,9 @@
    * transition
    */
 
-  --transition-1: 0.25s ease;
-  --transition-2: 0.25s ease;
+  --transition-duration: 0.25s;
+  --transition-1: var(--transition-duration) ease;
+  --transition-2: var(--transition-duration) ease;
 
 }
 
@@ -2032,35 +2033,118 @@ body.light-mode {
   }
 }
 
-/* Remove all transitions first */
+/* Add global transition for theme changes */
 * {
+  transition: all 0.25s ease;
+}
+
+/* Remove all individual transition properties */
+.sidebar,
+.content-card,
+.article,
+.navbar,
+.blog-banner-box,
+.filter-select-box,
+.select-list,
+.form-input,
+.modal-content,
+.testimonials-modal,
+.icon-box,
+.info_more-btn,
+.contact-info .icon-box,
+.project-item-icon-box,
+.modal-close-btn,
+ion-icon,
+.form-btn,
+[data-filter-btn],
+.separator,
+.skill-progress-bg,
+.navbar-link,
+.social-link,
+#theme-toggle .sun,
+#theme-toggle .moon,
+.project-img::before,
+.project-img img,
+.select-list,
+.testimonials-modal,
+body.light-mode,
+.sidebar,
+.blog-banner-box img,
+.form-btn::before,
+.project-item-icon-box::after,
+.content-card::before,
+.service-item::before,
+.testimonials-item > * {
   transition: none !important;
 }
 
-/* Then add a single, consistent transition for everything */
-body,
-body * {
-  transition: all 0.25s ease !important;
+/* Set single global transition */
+* {
+  transition: all 0.3s ease !important;
 }
 
-/* Remove gradient transitions which can cause lag */
-.sidebar,
-.content-card,
-[class*='gradient'],
-[style*='gradient'] {
-  transition-property: background-color, color, border-color, opacity, transform !important;
-  transition-duration: 0.25s !important;
-  transition-timing-function: ease !important;
-}
-
-/* Ensure theme toggle icons have the same transition */
+/* Update theme toggle transitions */
 #theme-toggle .sun,
 #theme-toggle .moon {
-  transition: opacity 0.25s ease, transform 0.25s ease !important;
+  transition: all 0.3s ease !important;
 }
 
-/* Remove transition delay */
-body.light-mode,
-body.light-mode * {
-  transition-delay: 0s !important;
+/* Update theme toggle button styles */
+#theme-toggle {
+  color: var(--light-gray-70);
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;  /* Match social-link padding */
+  border-radius: 8px;
+  margin-inline: 0;  /* Remove margin and let parent li handle spacing */
+}
+
+#theme-toggle .sun,
+#theme-toggle .moon {
+  position: absolute;
+  transition: var(--transition-1);
+}
+
+/* Hide sun icon by default (dark mode) */
+#theme-toggle .sun {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* Show sun icon in light mode */
+body.light-mode #theme-toggle .sun {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Hide moon icon in light mode */
+body.light-mode #theme-toggle .moon {
+  opacity: 0;
+  transform: scale(0);
+}
+
+body.light-mode #theme-toggle {
+  color: var(--white-1);
+}
+
+body.light-mode #theme-toggle:hover {
+  color: var(--orange-yellow-crayola);
+}
+
+/* Update social list item spacing */
+.social-item {
+  margin-inline: 8px;  /* Apply consistent spacing to all items */
+}
+
+/* First and last items should not have outer margins */
+.social-item:first-child {
+  margin-left: 0;
+}
+
+.social-item:last-child {
+  margin-right: 0;
 }
