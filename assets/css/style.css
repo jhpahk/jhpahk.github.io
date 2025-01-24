@@ -521,6 +521,13 @@ a {
   display: inline;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.contact-link a {
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
   max-width: 100%;
 }
 
