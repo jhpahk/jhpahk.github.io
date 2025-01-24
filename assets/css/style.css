@@ -528,6 +528,7 @@ main {
 
 .service-item {
   width: 100%;
+  flex: 0 0 100%;  /* Force single item per row */
   display: flex;
   align-items: flex-start;
   gap: 10px;
@@ -544,7 +545,7 @@ main {
 }
 
 .service-icon-box ion-icon {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .service-content-box {
@@ -792,6 +793,8 @@ main {
 .timeline-list {
   font-size: var(--fs-6);
   margin-left: 45px;
+  max-height: calc(3 * (1.6em + 20px + 7px + 2em));  /* Limit to 3 items */
+  overflow: hidden;
 }
 
 .timeline-item { position: relative; }
@@ -2152,4 +2155,27 @@ body.light-mode #theme-toggle:hover {
 
 .social-item:last-child {
   margin-right: 0;
+}
+
+/* Update Publications section style */
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-item {
+  width: 100%;
+  flex: 0 0 100%;  /* Force single item per row */
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+}
+
+/* Override any responsive styles */
+@media (min-width: 580px) {
+  .service-list {
+    grid-template-columns: 1fr;  /* Force single column */
+  }
 }
