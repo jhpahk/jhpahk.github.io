@@ -579,7 +579,7 @@ a {
   margin-top: 2px;
   font-size: var(--fs-7);
   line-height: 2;
-  color: var(--white-2);
+  color: var(--white-1);
 }
 
 
@@ -1304,7 +1304,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     --fs-3: 26px;
     --fs-4: 18px;
     --fs-6: 15px;
-    --fs-7: 15px;
+    --fs-7: 14px;
     --fs-8: 12px;
 
   }
