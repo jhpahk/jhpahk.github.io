@@ -2196,6 +2196,6 @@ body.light-mode #theme-toggle:hover {
 }
 
 /* Adjust icon colors for light mode */
-body.light-mode .icon-box ion-icon {
+/* body.light-mode .icon-box ion-icon {
   color: var(--onyx);
-}
+} */
