@@ -1947,6 +1947,32 @@ body.light-mode {
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.1);
   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.05);
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.1);
+
+  /* Add hyperlink colors */
+  --link-color: var(--orange-yellow-crayola);
+  --link-hover-color: hsl(45, 100%, 35%);
+
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+  }
+
+  /* Specific link styles in about section */
+  .about-text a {
+    color: var(--link-color);
+    font-weight: 500;
+  }
+
+  .about-text a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+  }
 }
 
 /* Additional light mode adjustments for specific elements */
