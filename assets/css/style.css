@@ -318,7 +318,7 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 150px;
+  max-height: 140px;
   overflow: hidden;
   transition: var(--transition-2);
 }
@@ -983,7 +983,8 @@ main {
   --scale: 0.8;
 
   background: var(--jet);
-  color: var(--orange-yellow-crayola);
+  /* color: var(--orange-yellow-crayola); */
+  color: var(--white-1);
   position: absolute;
   top: 50%;
   left: 50%;
