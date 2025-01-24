@@ -62,7 +62,7 @@
   --eerie-black-2: hsl(240, 2%, 12%);
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
+  --white-2: hsl(0, 0%, 77%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
@@ -578,7 +578,7 @@ a {
   margin-top: 2px;
   font-size: var(--fs-7);
   line-height: 2;
-  color: var(--white-1);
+  color: var(--white-2);
 }
 
 
