@@ -1958,8 +1958,8 @@ body.light-mode {
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.1);
 
   /* Add hyperlink colors */
-  --link-color: var(--blue-1);
-  --link-hover-color: var(--blue-hover);
+  --link-color: hsl(45, 100%, 45%);
+  --link-hover-color: hsl(45, 100%, 35%);
 
   a {
     color: var(--link-color);
