@@ -353,6 +353,7 @@ main {
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
+  white-space: pre-line;
 }
 
 .info_more-btn {
@@ -2152,7 +2153,7 @@ body.light-mode #theme-toggle:hover {
 /* Add mobile-specific styles */
 @media (max-width: 580px) {
   .info-content .title::after {
-    content: "PhD Student @ POSTECH";
+    content: "PhD Student\n@ POSTECH";
     position: absolute;
     top: 0;
     left: 0;
@@ -2161,17 +2162,11 @@ body.light-mode #theme-toggle:hover {
     background: var(--onyx);
     border-radius: 8px;
     padding: 3px 12px;
+    white-space: pre-line; /* Allow line breaks */
   }
 
   .info-content .title {
     position: relative;
     color: transparent;
-  }
-}
-
-/* Restore original title for larger screens */
-@media (min-width: 581px) {
-  .info-content .title {
-    color: var(--white-1);
   }
 }
