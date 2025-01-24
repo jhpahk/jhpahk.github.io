@@ -516,7 +516,7 @@ main {
   line-height: 1.6;
 }
 
-.about-text a {
+.about-text a:link {
   white-space: nowrap !important;
   display: inline !important;
 }
