@@ -353,7 +353,7 @@ main {
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
-  white-space: pre-line;
+  white-space: pre-wrap;
 }
 
 .info_more-btn {
