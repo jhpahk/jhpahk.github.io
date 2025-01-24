@@ -437,10 +437,6 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-1);
   font-size: var(--fs-7);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: inline-block;
 }
 
 .contact-info address { font-style: normal; }
@@ -1880,6 +1876,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .contacts-list { grid-template-columns: 1fr; }
+
+  .contact-info :is(.contact-link) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
