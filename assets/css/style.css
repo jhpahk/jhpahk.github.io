@@ -2067,19 +2067,25 @@ ion-icon,
 .select-list,
 .testimonials-modal,
 body.light-mode,
-.sidebar {
-  transition: all 0.5s ease !important;
+.sidebar,
+.blog-banner-box img,
+.form-btn::before,
+.project-item-icon-box::after,
+.content-card::before,
+.service-item::before,
+.testimonials-item > * {
+  transition: none !important;
 }
 
-/* Remove any specific transition properties */
-:root {
-  --transition-1: 0.5s ease;
-  --transition-2: 0.5s ease;
-}
-
-/* Add global transition */
+/* Set single global transition */
 * {
-  transition: all 0.5s ease;
+  transition: all 0.3s ease !important;
+}
+
+/* Update theme toggle transitions */
+#theme-toggle .sun,
+#theme-toggle .moon {
+  transition: all 0.3s ease !important;
 }
 
 /* Update theme toggle button styles */
