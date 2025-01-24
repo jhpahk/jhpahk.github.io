@@ -25,14 +25,14 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 75%) 3%, 
-    hsl(0, 0%, 81%) 97%
+    hsl(240, 1%, 25%) 3%, 
+    hsl(0, 0%, 19%) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 82%, 0.251) 0%, 
-    hsla(240, 2%, 89%, 0) 100%
-  ), hsl(240, 2%, 87%);
+    hsla(240, 1%, 18%, 0.251) 0%, 
+    hsla(240, 2%, 11%, 0) 100%
+  ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
     hsl(45, 100%, 71%) 0%, 
@@ -56,17 +56,17 @@
 
   /* solid */
 
-  --jet: hsl(0, 0%, 78%);
-  --onyx: hsl(240, 1%, 83%);
-  --eerie-black-1: hsl(240, 2%, 87%);
-  --eerie-black-2: hsl(240, 2%, 88%);
-  --smoky-black: hsl(0, 0%, 93%);
-  --white-1: hsl(0, 0%, 0%);
-  --white-2: hsl(0, 0%, 2%);
+  --jet: hsl(0, 0%, 22%);
+  --onyx: hsl(240, 1%, 17%);
+  --eerie-black-1: hsl(240, 2%, 13%);
+  --eerie-black-2: hsl(240, 2%, 12%);
+  --smoky-black: hsl(0, 0%, 7%);
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
   --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 16%);
-  --light-gray-70: hsla(0, 0%, 16%, 0.7);
+  --light-gray: hsl(0, 0%, 84%);
+  --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
@@ -96,11 +96,11 @@
    * shadow
    */
   
-  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.1);
-  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.1);
-  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.1);
-  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.05);
-  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.1);
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
   /**
    * transition
@@ -1881,150 +1881,55 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-/* Light mode color adjustments */
-body.light-mode {
-  /* Reverse all color variables for light mode */
-  --bg-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(240, 1%, 75%) 3%, 
-    hsl(0, 0%, 81%) 97%
-  );
-  --bg-gradient-jet: linear-gradient(
-    to bottom right, 
-    hsla(240, 1%, 82%, 0.251) 0%, 
-    hsla(240, 2%, 89%, 0) 100%
-  ), hsl(240, 2%, 87%);
-  
-  /* Reverse solid colors */
-  --jet: hsl(0, 0%, 78%);
-  --onyx: hsl(240, 1%, 83%);
-  --eerie-black-1: hsl(240, 2%, 87%);
-  --eerie-black-2: hsl(240, 2%, 88%);
-  --smoky-black: hsl(0, 0%, 93%);
-  --white-1: hsl(0, 0%, 0%);
-  --white-2: hsl(0, 0%, 2%);
-  --light-gray: hsl(0, 0%, 16%);
-  --light-gray-70: hsla(0, 0%, 16%, 0.7);
-  
-  /* Update background and text colors */
-  background: var(--smoky-black);
-  color: var(--white-1);
-
-  /* Adjust shadows for light mode */
-  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.1);
-  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.1);
-  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.1);
-  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.05);
-  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.1);
+/* Theme toggle button styles */
+.theme-toggle {
+  background: var(--onyx);
+  color: var(--orange-yellow-crayola);
+  padding: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  transition: var(--transition-1);
+  position: relative;
 }
 
-/* Additional light mode adjustments for specific elements */
-body.light-mode {
-  /* Text elements */
-  .article-title,
-  .timeline-text,
-  .skill-title,
-  .h1, .h2, .h3, .h4, .h5,
-  .project-title,
-  .blog-title,
-  .blog-text,
-  .timeline-item-title,
-  .contact-title,
-  .contact-info,
-  .blog-category,
-  .blog-item-title,
-  .name,
-  .title,
-  p,
-  .contact-title,
-  time,
-  address,
-  .about-text,
-  .service-item-text,
-  .timeline-text,
-  .timeline-item-title,
-  .skills-title,
-  .client-name,
-  .testimonials-text,
-  .modal-title,
-  .form-input,
-  .form-input::placeholder {
-    color: var(--white-1);
-  }
+.theme-toggle:hover {
+  background: var(--jet);
+}
 
-  /* Icons and buttons */
-  .icon-box,
-  .info_more-btn,
-  .contact-info .icon-box,
-  .project-item-icon-box,
-  .modal-close-btn,
-  ion-icon,
-  .form-btn {
-    color: var(--white-1);
-  }
+.theme-toggle .sun,
+.theme-toggle .moon {
+  font-size: 20px;
+  position: absolute;
+  transition: var(--transition-1);
+}
 
-  /* Backgrounds and borders */
-  .sidebar,
-  article,
-  .content-card,
-  .navbar {
-    background: var(--eerie-black-2);
-    border-color: var(--jet);
-  }
+/* Hide sun icon by default (dark mode) */
+.theme-toggle .sun {
+  opacity: 0;
+  transform: scale(0);
+}
 
-  /* Progress bars and separators */
-  .separator {
-    background: var(--jet);
-  }
+/* Show sun icon in light mode */
+body.light-mode .theme-toggle .sun {
+  opacity: 1;
+  transform: scale(1);
+}
 
-  .skill-progress-fill {
-    background: var(--orange-yellow-crayola);
-  }
+/* Hide moon icon in light mode */
+body.light-mode .theme-toggle .moon {
+  opacity: 0;
+  transform: scale(0);
+}
 
-  .skill-progress-bg {
-    background: var(--jet);
-  }
+.light-mode .theme-toggle {
+  background: var(--light-onyx);
+}
 
-  /* Navigation */
-  .navbar-link {
-    color: var(--white-2);
-  }
-
-  .navbar-link:hover,
-  .navbar-link:focus {
-    color: var(--light-gray);
-  }
-
-  .navbar-link.active {
-    color: var(--orange-yellow-crayola);
-  }
-
-  /* Social icons */
-  .social-item .social-link {
-    color: var(--white-1);
-  }
-
-  .social-item .social-link:hover {
-    color: var(--orange-yellow-crayola);
-  }
-
-  /* Form elements */
-  .form-input {
-    border-color: var(--jet);
-    color: var(--white-1);
-  }
-
-  .form-input::placeholder {
-    color: var(--white-2);
-  }
-
-  /* Modal */
-  .testimonials-modal {
-    background: var(--eerie-black-2);
-  }
-
-  .modal-content time,
-  .modal-content p {
-    color: var(--white-1);
-  }
+.light-mode .theme-toggle:hover {
+  background: var(--light-jet);
 }
