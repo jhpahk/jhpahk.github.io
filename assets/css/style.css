@@ -2032,6 +2032,11 @@ body.light-mode {
   }
 }
 
+/* Add global transition for theme changes */
+* {
+  transition: background-color 0.25s, color 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+
 /* Theme toggle button styles */
 #theme-toggle {
   color: var(--light-gray-70);
@@ -2041,11 +2046,10 @@ body.light-mode {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 8px;
+  border-radius: 8px;
+  margin-inline: 8px;
   transition: var(--transition-1);
-}
-
-#theme-toggle:hover {
-  color: var(--light-gray);
 }
 
 #theme-toggle .sun,
