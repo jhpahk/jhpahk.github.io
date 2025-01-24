@@ -518,7 +518,7 @@ main {
 
 a {
   white-space: nowrap;
-  display: inline !important;
+  display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
