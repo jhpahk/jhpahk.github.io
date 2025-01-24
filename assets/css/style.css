@@ -2108,7 +2108,10 @@ body.light-mode,
 }
 
 /* Update theme toggle transitions */
-#theme-toggle .sun,
+#theme-toggle .sun {
+  transition: all 0.3s ease !important;
+}
+
 #theme-toggle .moon {
   transition: all 0.3s ease !important;
 }
