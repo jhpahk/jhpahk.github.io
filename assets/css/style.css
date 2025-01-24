@@ -546,7 +546,7 @@ main {
 
 .service-icon-box ion-icon {
   font-size: 16px;
-  color: var(--light-gray-70);
+  color: var(--white-1);
 }
 
 .service-content-box {
@@ -563,8 +563,8 @@ main {
 .service-item-text {
   margin-top: 2px;
   font-size: var(--fs-7);
-  line-height: 1.6;
-  color: var(--light-gray);
+  line-height: 2;
+  color: var(--white-1);
 }
 
 
